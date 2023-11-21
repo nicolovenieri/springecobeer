@@ -15,7 +15,7 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
     }
 
     @Override
-    public void beginTransaction() {/*
+    public void beginTransaction() {
         try {
             Class.forName(Configuration.DATABASE_DRIVER);
             this.connection = DriverManager.getConnection(Configuration.DATABASE_URL);
@@ -24,7 +24,7 @@ public class MySQLJDBCDAOFactory extends DAOFactory {
             throw new RuntimeException(e);
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }*/
+        }
     }
 
     @Override
